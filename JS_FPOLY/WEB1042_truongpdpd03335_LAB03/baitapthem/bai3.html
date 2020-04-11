@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 3. Viết chương trình Javascript tính tiền Taxi, người dùng nhập vào số km
+từ bàn phím. Việc tính tiền Taxi theo yêu cầu sau: từ 1 -10km đầu tiên
+tính giá 13000 đ, từ 11km – 30km tính 12000 đ, và từ 31 km trở lên tính
+giá 10000 đ. Tổng tiền đi xe Taxi được tính thêm 10% thuế VAT. -->
+    <script>
+      var km = prompt("So kilometer: ");
+      km = Number(km);
+      var STARTING = 13000;
+      var NEXT11_30 = 12000;
+      var NEXT31_KM = 10000;
+      var VAT = 0.1;
+      var money = 0;
+      while (km < 0) {
+        alert("Số km nhập vào phải lớn hơn 0. Mời bạn nhập lại: ");
+        var km = prompt("So kilometer: ");
+      }
+      if (km <= 10) {
+        money = 13000 * km;
+      } else if (km <= 30) {
+        money = STARTING * 10 + NEXT11_30 * (km - 10);
+      } else {
+        money = STARTING * 10 + NEXT11_30 * 20 + NEXT31_KM * (km - 30);
+      }
+      money += money * 0.1;
+      document.write("Số tiền đi " + km + " km = " + money + " đồng.");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         2.Viết chương trình Javascript nhập vào một chuỗi từ bàn phím. Đếm trong
+      //   chuỗi vừa nhập có bao nhiêu ký tự nguyên âm và in các ký tự ra màn
+      //   hình.
+      var chuoiTuBanPhim = prompt("nhập vào một chuỗi từ bàn phím!");
+      var arrCharacters = chuoiTuBanPhim.toLocaleLowerCase().split("");
+      var nguyenAm = 0;
+      var phuAm = 0;
+      var listNguyenAm = ["u", "e", "o", "a", "i"];
+      for (i = 0; i < arrCharacters.length; i++) {
+        listNguyenAm.forEach(word => {
+          if (arrCharacters[i] == word) {
+            nguyenAm++;
+          }
+        });
+        phuAm++;
+      }
+      document.write(`Có SL nguyên âm là :  ${nguyenAm} <br>`);
+      document.write(`Có SL phụ âm là :  ${phuAm}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function validateForm() {
+        e.preventDefault();
+        var sanpham = document.forms["form1"].txtSanPham.value;
+        if (sanpham == "") {
+          alert("Sản phẩm không được để trống");
+        }
+        var dongia = document.forms["form1"].txtDonGia.value;
+        if (sanpham == "") {
+          alert("Đơn giá không được để trống");
+        } else if (isNaN(dongia) == true) {
+          alert("Đơn giá phải là một số");
+        }
+      }
+      function checkNgoaiThanh(radioCheck) {
+        if (radioCheck.value == "NgoaiThanh") {
+          document.getElementById("phivanchuyen").innerText = "20000";
+        } else if (radioCheck.value == "NoiThanh") {
+          document.getElementById("phivanchuyen").innerText = "";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Đặt Hàng</h2>
+    <form
+      method="POST"
+      action="#"
+      name="form1"
+      onsubmit="return validateForm();"
+    >
+      Sản Phẩm: <input type="text" name="txtSanPham" /><br />
+      Loai:
+      <select id="loai">
+        <option value="MayTinh">Máy Tính</option>
+        <option value="DienThoai">Điện Thoại</option>
+        <option value="MayTinh">Máy Tính</option>
+      </select>
+      <br />
+      Đơn Giá: <input type="text" name="txtDonGia" /><br />
+      Nơi Nhận:
+      <input
+        type="radio"
+        name="radios"
+        value="NoiThanh"
+        onclick="checkNgoaiThanh(this);"
+      />
+      Nội Thành
+      <input
+        type="radio"
+        name="radios"
+        value="NgoaiThanh"
+        onclick="checkNgoaiThanh(this);"
+      />
+      Ngoại Thành
+      <br />
+      Phí Vận Chuyển :
+      <div style="border: 1px solid red; height: 20px; width: 150px;">
+        <label id="phivanchuyen"></label>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var soBiMat = Math.floor(Math.random() * 101);
+      soBiMat = Number(soBiMat);
+      // console.log("soBiMat", soBiMat);
+      var soNhap = prompt("So da nhap: ");
+      soNhap = Number(soNhap);
+      if (soNhap == soBiMat) {
+        document.write("Đã đoán trúng");
+      } else {
+        if (soNhap > soBiMat) {
+          document.write("Số bí mật nhỏ hơn số của bạn");
+        } else {
+          document.write("Số bí mật lớn hơn số của bạn");
+        }
+      }
+    </script>
+  </body>
+</html>

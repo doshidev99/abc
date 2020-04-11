@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ax + b = 0
+      var a = prompt("nhap a: ");
+      Number(a);
+      var b = prompt("nhap b: ");
+      Number(b);
+      if (a == 0) {
+        if (b == 0) {
+          alert("Pt vo so nghiem!");
+        } else {
+          alert("pt vo nghiem!");
+        }
+      } else {
+        var no = -(b / a);
+        // alert('Phương trình có nghiệm duy nhất x = ' + no);
+        alert(`Phương trình có nghiệm duy nhất x = ${no}`);
+      }
+    </script>
+  </body>
+</html>

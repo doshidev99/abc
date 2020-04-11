@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .square {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid gray;
+      background: grey;
+      margin: 2px;
+      color: #fff;
+    }
+    button {
+      cursor: pointer;
+    }
+    .flex-global {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .result {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <input type="text" class="result" id="result"></input>
+    <div class="flex-global">
+      <input type="button" class="square" id="7" value="7" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="8" value="8" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="9" value="9" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="+" value="+" onclick="result.value +=this.value"/>
+    </div>
+    <div class="flex-global">
+      <input type="button" class="square" id="4" value="4" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="5" value="5" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="6" value="6" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="-" value="-" onclick="result.value +=this.value"/>
+    </div>
+    <div class="flex-global">
+      <input type="button" class="square" id="1" value="1" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="2" value="2" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="3" value="3" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="*" value="*" onclick="result.value +=this.value"/>
+    </div>
+    <div class="flex-global">
+      <input type="button" class="square" id="0" value="0" onclick="result.value +=this.value"/>
+      <input type="button" class="square" id="C" value="C" onclick="result.value =''"/>
+      <input type="button" class="square" id="=" value="=" onclick="result.value = eval(result.value)"/>
+      <input type="button" class="square" id="/" value="/" onclick="result.value +=this.value"/>
+    </div>
+    <script>
+      let one = document.getElementById("1").value;
+      let two = document.getElementById("2").value;
+      let three = document.getElementById("3").value;
+      let four = document.getElementById("4").value;
+      let five = document.getElementById("5").value;
+      let six = document.getElementById("6").value;
+      let seven = document.getElementById("7").value;
+      let age = document.getElementById("8").value;
+      let nice = document.getElementById("9").value;
+      let sum = document.getElementById("+").value;
+      let ince = document.getElementById("-").value;
+      let decre = document.getElementById("*").value;
+      let division = document.getElementById("/").value;
+      document.getElementById("result").innerHTML = "3 + 3 ";
+    </script>
+  </body>
+</html>

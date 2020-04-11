@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content" style="text-align: center;">
+      <img
+        id="img"
+        src="./img/0.JPG"
+        alt=""
+        onmouseover="fover()"
+        onmouseout="fout()"
+      />
+      <hr />
+      <div style="display: flex; justify-content: center;">
+        <button onClick="first()">First</button>
+        <button onClick="prev()">Prev</button>
+        <button onClick="next()">Next</button>
+        <button onClick="last()">Last</button>
+      </div>
+    </div>
+    <script>
+      const images = [
+        "./img/0.JPG",
+        "./img/1.JPG",
+        "./img/2.JPG",
+        "./img/3.JPG",
+        "./img/4.JPG",
+        "./img/5.JPG",
+      ];
+      for (var i = 0; i < 6; i++) {
+        images[i] = new Image();
+        images[i].src = `./img/${i}.JPG`;
+      }
+      var image = document.getElementById("img");
+      var index = 0;
+      function first() {
+        index = 0;
+        image.src = images[index].src;
+      }
+      function prev() {
+        index--;
+        if (index < 0) {
+          index = images.length - 1;
+        }
+        image.src = images[index].src;
+      }
+      function next() {
+        index++;
+        if (index > images.length) {
+          index = 0;
+        }
+        image.src = images[index].src;
+      }
+      function last() {
+        index = images.length - 1;
+        image.src = images[index].src;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onClick="ptb2.giai();">Giải</button>
+    <script>
+      var ptb2 = new Object();
+      ptb2.a = Number(prompt("Hệ số a"));
+      ptb2.b = Number(prompt("Hệ số b"));
+      ptb2.c = Number(prompt("Hệ số c"));
+      ptb2.delta = Math.pow(ptb2.b, 2) - 4 * ptb2.a * ptb2.c;
+      ptb2.giai = function() {
+        if (ptb2.delta < 0) {
+          alert("Phương trình vô nghiệm!");
+        } else if (ptb2.delta == 0) {
+          var x = (-ptb2.b / 2) * ptb2.a;
+          alert("Phương trình có nghiệm kép!" + x);
+        } else {
+          var x1 = -ptb2.b + (Math.sqrt(ptb2.delta) / 2) * ptb2.a;
+          var x2 = -ptb2.b - (Math.sqrt(ptb2.delta) / 2) * ptb2.a;
+          alert(
+            "Phương trình đã cho có hai nghiệm phân biệt là: x1= " +
+              x1 +
+              "; x2= " +
+              x2
+          );
+        }
+      };
+    </script>
+  </body>
+</html>

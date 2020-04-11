@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onClick="openWindow()">Mở cửa sổ mới</button>
+    <button onClick="closeWindow()">*Đóng cửa sổ mới</button>
+    <button onClick="checkWindow()">
+      Kiểm tra cửa sổ mới đã đóng hay chưa+
+    </button>
+    <script>
+      let flag = false;
+      function openWindow() {
+        flag = true;
+        popup = window.open("popup.html", "popup", "height=100,width=100");
+      }
+      function closeWindow() {
+        flag = false;
+        popup.close();
+      }
+      function checkWindow() {
+        if (flag) {
+          alert("Cửa sổ đang mở!");
+        } else {
+          alert("Cửa sổ đã đóng!");
+        }
+      }
+    </script>
+  </body>
+</html>

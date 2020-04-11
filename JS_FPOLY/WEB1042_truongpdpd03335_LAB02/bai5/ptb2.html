@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = prompt("Nhap a: ");
+      var b = prompt("Nhap b: ");
+      var c = prompt("Nhap c: ");
+      var delta = Math.pow(b, 2) - 4 * a * c;
+      if (delta < 0) {
+        alert("Pt vo nghiem");
+      } else if (delta == 0) {
+        var xo = -b / (2 * a);
+        alert("Pt co nghiem khep la: " + xo);
+      } else {
+        x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        alert(`nghiem phuong trinh x1 = ${x1}, x2=${x2}`);
+      }
+    </script>
+  </body>
+</html>

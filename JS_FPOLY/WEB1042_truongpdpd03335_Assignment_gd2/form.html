@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .form {
+      width: 400px;
+      border: 1px solid #ccc;
+      padding: 30px;
+    }
+    .border {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .label {
+      text-align: left;
+      display: inherit;
+      padding: 5px 0;
+      border-radius: 5px;
+    }
+    .d-flex {
+      display: flex;
+    }
+    input {
+      padding: 10px 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .pl-16 {
+      padding-left: 16px;
+    }
+    select {
+      width: 100%;
+      border: none;
+      background: none;
+      outline: 0;
+    }
+    textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background: none;
+      border-radius: 5px;
+      border: 1px solid green;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      e.preventDefault();
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      console.log("hello");
+    };
+  </script>
+  <body>
+    <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+    <div class="form">
+      <form
+        name="myForm"
+        onsubmit="return validateForm()"
+        method="post"
+      >
+        <label for="" class="label">
+          Mã Sinh Viên
+          <input type="text" required name="fname" />
+        </label>
+        <label for="" class="label">
+          Họ và tên
+          <input type="text" required />
+        </label>
+        <label for="" class="label">
+          Email
+          <input type="email" type="email" required />
+        </label>
+        <label for="" class="label">
+          Giới Tính
+          <div class="d-flex border">
+            <div class="d-flex">
+              <div><input type="radio" /></div>
+              <div class="pl-16">Nam</div>
+            </div>
+            <div class="d-flex">
+              <div><input type="radio" /></div>
+              <div class="pl-16">Nữ</div>
+            </div>
+          </div>
+        </label>
+        <label for="" class="label">
+          Sở Thích
+          <div class="d-flex border">
+            <div class="d-flex">
+              <div><input type="radio" /></div>
+              <div class="pl-16">Đọc Sách</div>
+            </div>
+            <div class="d-flex">
+              <div><input type="radio" /></div>
+              <div class="pl-16">Du Lịch</div>
+            </div>
+            <div class="d-flex">
+              <div><input type="radio" /></div>
+              <div class="pl-16">Âm nhạc</div>
+            </div>
+            <div class="d-flex">
+              <div><input type="radio" /></div>
+              <div class="pl-16">Ẩm thực</div>
+            </div>
+            <div class="d-flex">
+              <div><input type="radio" /></div>
+              <div class="pl-16">Khác</div>
+            </div>
+          </div>
+        </label>
+        <label>
+          Quốc tịch
+          <div class="border">
+            <select id="contry">
+              <option value="default">Chọn Quốc tịch</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+        </label>
+        <label>
+          Ghi chú
+          <textarea></textarea>
+        </label>
+        <input class="btn" type="submit" value="Đăng Ký" />
+      </form>
+    </div>
+  </body>
+</html>

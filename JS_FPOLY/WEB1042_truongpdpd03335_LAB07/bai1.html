@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-app="myapp">
+      <div ng-controller="HeaderController">
+        <h2>{{data.timer}}</h2>
+        <button ng-click="incrementTimer()">Start count to 10</button>
+      </div>
+      <script>
+        angular
+          .module("myapp", [])
+          .controller("HeaderController", function ($scope) {
+            $scope.data = {
+              timer: 0,
+            };
+            $scope.incrementTimer = function () {
+              setInterval(() => {
+                if ($scope.data.timer >= 10) {
+                  $scope.data.timer = 1;
+                } else {
+                  $scope.data.timer = $scope.data.timer + 1;
+                }
+                $scope.$apply();
+              }, 1000);
+            };
+          });
+      </script>
+    </div>
+  </body>
+</html>
