@@ -1,0 +1,34 @@
+body {
+  padding: 0;
+  overflow: hidden;
+}
+.wrapper {
+  padding: 0 20px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+.col-8 {
+  width: calc(60% - 20px)
+}
+
+.col-4 {  
+  padding-top: 20px;
+  width: calc(40% - 20px)
+}
+.fh {
+  font-weight: inherit;
+  color: #333333;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.px-5 {
+  padding: 0 20px;
+}

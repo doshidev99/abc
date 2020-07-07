@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESS - About</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="bg-white">
+    <nav class="flex-center justify-content-between">
+      <div class="col-4 pd-l-all">
+        <a class="navbar-brand cursor-pointer" href="/">
+          <div class="img-logo">
+            <img src="./images/top-logo.png" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- mobile menu -->
+      <button onclick="dropDown()"
+        class="outline-0 navbar-toggler d-lg-none pr-3" type="button">
+        <div class="img-logo navbar-toggler-icon">
+          <img src="./images/icons/icon-mobile.png" alt="">
+        </div>
+      </button>
+
+      <div id="menuMobile"
+        class="collapse d-none h-100vh transition navbar-collapse col-8 navbar-url-mobile"
+        id="navbarTogglerDemo01">
+        <div
+          class="flex-center  navbar-nav w-100 justify-content-between d-lg-flex d-inline">
+          <div class="w-navbar text-center py-2">
+            <a class="nav-href" href="/home">Home</a>
+            <div class="active-url"></div>
+          </div>
+          <div class="w-navbar text-center py-2">
+            <a class="nav-href" href="./about.html">About Us</a>
+            <div class="active-url"></div>
+          </div>
+          <div class=" box-btn-mobile mx-auto my-2">
+            <a class="nav-href" href="/home">
+              <div class="box-button">
+                Registration
+              </div>
+            </a>
+          </div>
+
+          <div class="box-btn-mobile mx-auto my-2">
+            <a class="nav-href" href="/home">
+              <div class="box-button">
+                Login
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- end mobile menu -->
+      <!-- desktop menu -->
+      <div class="pd-r-all d-lg-block d-none col-lg-4 col-8 navbar-url">
+        <div
+          class="flex-center  w-100 justify-content-between d-lg-flex d-inline">
+          <div class="w-navbar-dk">
+            <a class="nav-href" href="./index.html">Home</a>
+            <div class="active-url"></div>
+          </div>
+          <div class="w-navbar-dk" style=" border-bottom: 2px solid;">
+            <a class="nav-href" href="./about.html">About Us</a>
+            <div class="active-url"></div>
+          </div>
+          <div class=" box-btn-dk">
+            <a class="nav-href" href="./course.html">
+              <div class="box-button">
+                Course
+              </div>
+            </a>
+          </div>
+
+          <div class="box-btn-dk">
+            <a class="nav-href" href="./login.html">
+              <div class="box-button">
+                Login
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <!-- end dekstop menu -->
+    </nav>
+
+  </header>
+
+  <!-- end navbar -->
+
+  <article class="body justify-content-around">
+    <div class="section">
+      <div class="d-md-flex d-block">
+        <div class="col-md-6 col-12">
+          <div class="wrapper-about">
+            <div class="d-flex align-items-center">
+              <div class="col-4">
+                <img src="./images/woman.png" alt="">
+              </div>
+              <div class="col-8">
+                <p>
+                  Inès a une Licence en Maths et un Master en Bioinformatique,
+                  elle est diplômée de l’université Paris-Saclay et de l’école
+                  Polytechnique.
+                </p>
+                <p>
+                  Dès l’obtention de son Bac en 2011 elle se lance
+                  dans le soutien scolaire, et met en place une
+                  méthode d’enseignement innovante.
+                </p>
+              </div>
+            </div>
+            <p class="py-4">
+              En 2016, elle intègre DASSAULT SYSTEMES en tant
+              qu’ingénieur informatique, tout en continuant le
+              soutien scolaire. Elle ouvre avec Bilel un premier
+              centre Excellence SS en 2018 et elle quitte son
+              entreprise en 2019 pour se lancer pleinement dans
+              le domaine de l’éducation, et dans l’ouverture de
+              nouveaux centres de soutien scolaire.
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6 col-12">
+          <div class="wrapper-about">
+            <div class="d-flex align-items-center flex-row-reverse">
+              <div class="col-4">
+                <img src="./images/man.png" alt="">
+              </div>
+              <div class="col-8">
+                <p>
+                  Inès a une Licence en Maths et un Master en Bioinformatique,
+                  elle est diplômée de l’université Paris-Saclay et de l’école
+                  Polytechnique.
+                </p>
+                <p>
+                  Dès l’obtention de son Bac en 2011 elle se lance
+                  dans le soutien scolaire, et met en place une
+                  méthode d’enseignement innovante.
+                </p>
+              </div>
+            </div>
+            <p class="py-4">
+              En 2016, elle intègre DASSAULT SYSTEMES en tant
+              qu’ingénieur informatique, tout en continuant le
+              soutien scolaire. Elle ouvre avec Bilel un premier
+              centre Excellence SS en 2018 et elle quitte son
+              entreprise en 2019 pour se lancer pleinement dans
+              le domaine de l’éducation, et dans l’ouverture de
+              nouveaux centres de soutien scolaire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <footer class="footer">
+    <div class="pd-all py-2">
+      <div class="d-md-flex d-block flex-wrap justify-content-between">
+        <div
+          class="col-lg-9 col-12 d-md-flex d-inline flex-wrap justify-content-between">
+          <div class="col-lg-6 col-12">
+            <div class="d-flex justify-content-center">
+              <div class="icon-small pr-2">
+                <img src="./images/icons/phone.png" alt="">
+              </div>
+              <div class="num-phone">
+                0901.9898.99 - 0901.9898.11
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="d-flex justify-content-center">
+              <div class="icon-small pr-2">
+                <img src="./images/icons/mail.png" alt="">
+              </div>
+              <div class="num-phone">
+                abc@gmail.com </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 flex-center text-right">
+          <div class="flex-center w-100 justify-content-between">
+            <div class="text-blue">
+              Follow us
+            </div>
+            <div class="social">
+              <div class="flex-center justify-content-center">
+                <div class="icon-social mr-2">
+                  <img src="./images/icons/fb.png" alt="">
+                </div>
+                <div class="icon-social">
+                  <img src="./images/icons/instagram.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+
+</html>

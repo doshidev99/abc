@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESS - Login</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/login.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <!-- end navbar -->
+<div class="container">
+
+  <article>
+    <div class="d-md-flex w-100 d-block justify-content-between flex-row-reverse h-100">
+      <div class="col-md-5 col-12 text-center my-auto mx-auto">
+        <div class="wrapper-form">
+          <h3>Registrations</h3>
+          <form id="form">
+
+            <div class="wrapper-input my-4">
+              <input type="text" placeholder="User Name" name="name" />
+              <div class="wrapper-icon">
+                <img src="./images/user.png" alt="">
+              </div>
+            </div>
+
+            <div class="wrapper-input my-4">
+              <input type="tel" placeholder="Phone" name="tel" />
+              <div class="wrapper-icon">
+                <img src="./images/phone.png" alt="">
+              </div>
+            </div>
+            <div class="wrapper-input">
+              <input type="text" placeholder="Email" name="email" required
+                pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" />
+              <div class="wrapper-icon">
+                <img src="./images/mail.png" alt="">
+              </div>
+            </div>
+            <div class="wrapper-input my-4">
+              <input type="password" placeholder="Password" name="password" />
+              <div class="wrapper-icon">
+                <img src="./images/subtract.png" alt="">
+              </div>
+            </div>
+
+            <div class="wrapper-input my-4">
+              <input type="password" placeholder="Confirm password" name="confirmPass" />
+              <div class="wrapper-icon">
+                <img src="./images/subtract.png" alt="">
+              </div>
+            </div>
+
+          </form>
+
+          <div class="d-flex align-items-center justify-content-between">
+
+            <div class="wrapper-button col-6">
+              <button class="btn-customer" type="submit">
+                Login
+              </button>
+            </div>
+            <div class="wrapper-button col-6">
+              <button class="btn-customer" type="submit">
+                <a href="./regis.html" class="text-white">
+                Registrations
+              </a>
+              </button>
+            </div>
+          </div>
+
+
+          <p class=" py-2">
+            <a class="text-blue" href="./index.html">
+              Back
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-7 col-12">
+        <div class="__temp">
+          <img src="./images/bg-teacher.png" alt="">
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+</body>
+
+
+<script src="./main.js"></script>
+
+</html>

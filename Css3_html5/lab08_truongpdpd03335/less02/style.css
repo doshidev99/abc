@@ -1,0 +1,174 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+}
+
+header > .wrapper-banner {
+  width: 100%;
+  height: 140px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.path > ul > li {
+  list-style-type: none;
+  padding: 10px 0;
+
+  font-weight: bold;
+}
+
+.path {
+  width: 60%;
+}
+nav {
+  background: #024c86;
+  color: #fff;
+}
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+
+.ul-flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searching > div {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iput-search {
+  padding: 10px 27px;
+  border-radius: 5px 0 0 5px;
+  background: #fff;
+  border: none;
+}
+
+.btn-search {
+  padding: 10px 7px;
+  border-radius: 0 5px 5px 0;
+
+  background: red;
+  border: none;
+
+  color: #fff;
+}
+
+.cl-red {
+  color: red;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-left > h4 {
+  background: gray;
+  text-transform: uppercase;
+  padding: 10px;
+
+  margin: 0;
+}
+.text-right > h4 {
+  background: gray;
+  text-transform: uppercase;
+  padding: 10px;
+
+  margin: 0;
+}
+
+.col1 {
+  width: 25%;
+  padding: 10px 10px 10px 0;
+}
+
+.col1 > .text-right > ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.col1 > .text-right > ul > li {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+
+.col1 > .text-right > ul > li::after {
+  content: '◻️';
+  color: red; /* or whatever color you prefer */
+}
+
+.col2 {
+  width: 50%;
+  padding: 10px;
+}
+
+.col3 {
+  width: 25%;
+  padding-top: 10px;
+  padding-top: 10px 0px 10px 10px;
+}
+
+.col3 > .text-left > ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.col3 > .text-left > ul > li {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+
+.col3 > .text-left > ul > li::before {
+  content: '◻️';
+  color: red; /* or whatever color you prefer */
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.linker > ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.linker > ul > li {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+
+.linker > ul > li::before {
+  content: '◻️';
+  color: red; /* or whatever color you prefer */
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESS</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="bg-white">
+    <nav class="flex-center justify-content-between">
+      <div class="col-4 pd-l-all">
+        <a class="navbar-brand cursor-pointer" href="/">
+          <div class="img-logo">
+            <img src="./images/top-logo.png" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- mobile menu -->
+      <button onclick="dropDown()"
+        class="outline-0 navbar-toggler d-lg-none pr-3" type="button">
+        <div class="img-logo navbar-toggler-icon">
+          <img src="./images/icons/icon-mobile.png" alt="">
+        </div>
+      </button>
+
+      <div id="menuMobile"
+        class="collapse d-none h-100vh transition navbar-collapse col-md-8 col-10 navbar-url-mobile"
+        id="navbarTogglerDemo01">
+        <div
+          class="flex-center  navbar-nav w-100 justify-content-between d-lg-flex d-inline">
+          <div class="w-navbar text-center py-2"
+            style="border-bottom: 2px solid;">
+            <a class="nav-href" href="./index.html">Home</a>
+            <div class="active-url"></div>
+          </div>
+          <div class="w-navbar text-center py-2">
+            <a class="nav-href" href="./about.html">About Us</a>
+            <div class="active-url"></div>
+          </div>
+          <div class=" box-btn-mobile mx-auto my-2">
+            <a class="nav-href" href="/home">
+              <div class="box-button">
+                Registration
+              </div>
+            </a>
+          </div>
+
+          <div class="box-btn-mobile mx-auto my-2">
+            <a class="nav-href" href="./login.html">
+              <div class="box-button">
+                Login
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- end mobile menu -->
+      <!-- desktop menu -->
+      <div class="pd-r-all d-lg-block d-none col-lg-4 col-8 navbar-url">
+        <div
+          class="flex-center  w-100 justify-content-between d-lg-flex d-inline">
+          <div class="w-navbar-dk" style=" border-bottom: 2px solid;">
+            <a class="nav-href" href="./index.html">Home</a>
+            <div class="active-url"></div>
+          </div>
+          <div class="w-navbar-dk">
+            <a class="nav-href" href="./about.html">About Us</a>
+            <div class="active-url"></div>
+          </div>
+          <div class=" box-btn-dk">
+            <a class="nav-href" href="./course.html">
+              <div class="box-button">
+                Course
+              </div>
+            </a>
+          </div>
+
+          <div class="box-btn-dk">
+            <a class="nav-href" href="./login.html">
+              <div class="box-button">
+                Login
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- end dekstop menu -->
+    </nav>
+
+  </header>
+
+  <!-- end navbar -->
+  <article class="body">
+    <!-- wrapper-play-videos -->
+    <section class="wrapper-banner-play-video">
+      <div class="py-5 pd-l-all">
+        <div class="d-md-flex d-inline align-items-center position-relative">
+          <div class="col-md-6 col-12">
+            <div class="text-32 text-blue fwb py-2">
+              LA VOIE VERS LA REUSSITE
+            </div>
+            <div class="text-28 text-blue py-2">
+              Des cours adaptés à chacun, <br /> par les meilleurs professeurs
+            </div>
+            <div class="btn-blue py-3">
+              <button class="bg-blue py-2 px-5 text-white bdr5">
+                See available places
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 wrapper-video opacity-dot0 ">
+            <div class="video-pss">
+              <img src="./images/video.png" alt="">
+            </div>
+          </div>
+          <div class="position-absolute wrapper-video">
+            <div class="video-pss position-relative">
+              <img src="./images/video.png" alt="">
+              <div class="img-play">
+                <img src="./images/icons/play.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="heading-blue text-32 text-blue text-center fwb">
+      Nos professeurs sont diplômés <br /> des écoles suivantes
+    </section>
+    <!--  -->
+    <!-- universite -->
+    <section class="pd-all">
+      <div class="wrapper-universite py-4">
+        <div
+          class="d-md-flex d-inline align-items-center justify-content-between">
+          <div class="col-md-2 col-6 mx-md-0 mx-auto py-md-0 py-2">
+            <div class="logo-universite">
+              <img src="./images/logo-estaca.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mx-md-0 mx-auto py-md-0 py-2">
+            <div class="logo-universite">
+              <img src="./images/lolo-universite.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mx-md-0 mx-auto py-md-0 py-2">
+            <div class="logo-universite">
+              <img src="./images/logo-universite-paris.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6 mx-md-0 mx-auto py-md-0 py-2">
+            <div class="logo-universite">
+              <img src="./images/logo-sorbonne.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6 mx-md-0 mx-auto py-md-0 py-2">
+            <div class="logo-universite" style="height: 120px;">
+              <img src="./images/logo-ip-paris.png" class="obj-contain" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--  end universite -->
+    <section>
+
+      <div class="heading-blue text-32 text-blue text-center fwb"> Our benefits
+      </div>
+      <div class="pd-all py-3">
+        <div class="wrapper-benefit benefits">
+          <div class="d-md-flex d-inline flex-wrap">
+            <!-- cards -->
+            <div class="pt-3 col-lg-3 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-benefit-blue bg-blue text-center">
+                  <div class="pt-5 px-2">
+                    <div class="icon-benefit mx-auto">
+                      <img src="./images/icons/gr1.png" alt="">
+                    </div>
+                    <div class="text-white fwb">
+                      Augmentez votre moyenne
+                    </div>
+                  </div>
+                </div>
+                <div class="card-benefit-white">
+                  <div class="p-4 text-center">
+                    Un travail en profondeur, pour gagner des points de moyenne
+                    le plus rapidement possible.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class=" pt-3 col-lg-3 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-benefit-blue bg-blue text-center">
+                  <div class="pt-5 px-2">
+                    <div class="icon-benefit mx-auto">
+                      <img src="./images/icons/gr2.png" alt="">
+                    </div>
+                    <div class="text-white fwb">
+                      Augmentez vos chances d’entrer dans les meilleures écoles
+                    </div>
+                  </div>
+                </div>
+                <div class="card-benefit-white">
+                  <div class="p-4 text-center">
+                    Construisez le meilleur des dossiers pour vos études
+                    supérieures. </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 col-lg-3 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-benefit-blue bg-blue text-center">
+                  <div class="pt-5 px-2">
+                    <div class="icon-benefit mx-auto">
+                      <img src="./images/icons/gr3.png" alt="">
+                    </div>
+                    <div class="text-white fwb">
+                      Adoptez la bonne méthodologie </div>
+                  </div>
+                </div>
+                <div class="card-benefit-white">
+                  <div class="p-4 text-center"> Trouver les méthodes qui vous
+                    conviennent et qui vous serviront toute
+                    votre vie. </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3  col-lg-3 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-benefit-blue bg-blue text-center">
+                  <div class="pt-5 px-2">
+                    <div class="icon-benefit mx-auto">
+                      <img src="./images/icons/gr4.png" alt="">
+                    </div>
+                    <div class="text-white fwb">
+                      Obtenez votre Bac avec les meilleures notes </div>
+                  </div>
+                </div>
+                <div class="card-benefit-white">
+                  <div class="p-4 text-center"> Commencez à préparer votre Bac
+                    dès le collège pour être sur d’avoir les
+                    bonnes bases. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- doing -->
+    <section class="wrapper-banner-play-video position-relative">
+      <div class="py-5 pd-r-all">
+        <div class="d-md-flex d-inline align-items-center position-relative">
+          <div class="col-md-6 col-12 wrapper-video opacity-dot0 ">
+            <div class="video-pss">
+              <img src="./images/doing.png" alt="">
+            </div>
+          </div>
+          <div class="position-absolute wrapper-doing">
+            <div class="video-pss position-relative">
+              <img src="./images/doing.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="text-32 text-blue fwb py-2">
+              What do we do?
+            </div>
+            <div class="text-20 text-gray py-2">
+              School support excellence is </div>
+            <div class="text-gray">
+              - Classes in groups of 4 <br />
+              - In Maths, Physics and Chemistry, English <br />
+              - With a UNIQUE and INNOVATIVE teaching method that motivates the
+              students<br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- box email -->
+      <div class="box-email bg-blue">
+        <div class="padding-box">
+          <div class="text-white pb-3">
+            If you want to know more about this method and its results, receive
+            our brochure by e-mail
+          </div>
+          <div class="flex-center justify-content-center">
+            <div class="input-inside col-6">
+              <input type="text"
+                class="bg-none w-100 flex-box-email-scantf text-white outline-0"
+                placeholder="yourmail@gmail.com" />
+            </div>
+            <div class="button-subcribe">
+              <button class="bg-white text-dark flex-box-email-scantf">
+                I want the brochure
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end box email position -->
+    </section>
+    <!-- Testimonials -->
+    <section class="pd-all testimonials">
+      <div class="flex-center">
+        <!-- speak -->
+        <div class="col-5">
+          <div class="speak">
+            <div class="icon-speak">
+              <img src="./images/icons/talk.png" alt="">
+            </div>
+            <div class="content-speak py-3">
+              Hac esse voluptatum quasi faucibus porttitor magnam porta
+              nascetur. Mattis, totam integer suspendisse,
+              viverra inventore, facilis eum cum quas ipsum commodo soluta
+              semper quidem praesent incidunt, arcu
+              imperdiet .
+            </div>
+            <div class="signature">
+              <div class="text-blue fwb">
+                Johnny Cohen
+              </div>
+              <div class="text-gray text-15">
+                Parent
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- avatar -->
+        <div class="col-3">
+          <div class="avatar-human">
+            <img src="./images/human.png" alt="">
+          </div>
+        </div>
+        <!-- arrow -->
+        <div class="col-4 text-center">
+          <div class="arrow">
+            <div class="text-blue fwb text-32">Testimonials</div>
+            <div class="flex-center py-3 justify-content-center">
+              <div class="icon-arrow">
+                <img src="./images/icons/arrow-left.png" alt="">
+              </div>
+              <div class="text-gray opacity-dot6">
+                1/6
+              </div>
+              <div class="icon-arrow">
+                <img src="./images/icons/arrow-right.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Testimonials -->
+
+    <!-- Internships open to all -->
+    <section class="pd-all py-5">
+      <div class="wrapper-internships">
+        <div class="d-md-flex d-inline flex-wrap">
+          <!-- cards -->
+          <div class="pt-3 col-lg-4 col-md-6 col-12">
+            <div class="card-detail">
+              <div class="card-title">
+                <div class="img-bgr position-relative">
+                  <img src="./images/bg-intern.png" alt="">
+
+                  <div class="text-white border-card">
+                    <div class="text-20 fwb">
+                      Internship Programme
+                    </div>
+                    <br />
+                    <span class="py-3 fw-300">Date - </span>13 March, 2020
+                    <br />
+                    <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                    <br />
+                    <span class="py-3 fw-300">Price - </span> $129.99
+                  </div>
+                </div>
+              </div>
+              <div class="card-internship-white">
+                <div class="text-center">
+                  Detail’s Internship Programme is tailored to students pursuing
+                  an LLB degree. The internship provides
+                  students exposure to transactional (non-courtroom) practice
+                  and mentorship. </div>
+
+                <div class="btn-get-more text-center pt-4">
+                  <button class="bg-gray bdr5 px-3 py-2">
+                    <a href="./detail.html">
+                      <div class="flex-center">
+                        <div class="content-btn pr-2">
+
+                          See more
+                        </div>
+                        <div class="icon-arrow-small">
+                          <img src="./images/icons/arrow-right.png" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- comunication -->
+          <div class="pt-3 col-lg-4 col-md-6 col-12">
+            <div class="text-blue fwb text-32 text-center py-3">
+              Internships
+              <br />
+              open to all
+            </div>
+            <div class="card-detail">
+              <div class="card-title">
+                <div class="img-bgr position-relative">
+                  <img src="./images/bg-communication.png" alt="">
+
+                  <div class="text-white border-card">
+                    <div class="text-20 fwb">
+                      Communication Intern </div>
+                    <br />
+                    <span class="py-3 fw-300">Date - </span>13 March, 2020
+                    <br />
+                    <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                    <br />
+                    <span class="py-3 fw-300">Price - </span> $129.99
+                  </div>
+                </div>
+              </div>
+              <div class="card-internship-white">
+                <div class="text-center">
+                  Detail’s Internship Programme is tailored to students pursuing
+                  an LLB degree. The internship provides
+                  students exposure to transactional (non-courtroom) practice
+                  and mentorship. </div>
+                <div class="btn-get-more text-center pt-4">
+                  <button class="bg-gray bdr5 px-3 py-2">
+                    <a href="./detail.html">
+                      <div class="flex-center">
+                        <div class="content-btn pr-2">
+
+                          See more
+                        </div>
+                        <div class="icon-arrow-small">
+                          <img src="./images/icons/arrow-right.png" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- draw -->
+          <div class="pt-3 col-lg-4 col-md-6 col-12">
+            <div class="card-detail">
+              <div class="card-title">
+                <div class="img-bgr position-relative">
+                  <img src="./images/bg-draw.png" alt="">
+
+                  <div class="text-white border-card">
+                    <div class="text-20 fwb">
+                      Drawing Intern
+                    </div>
+                    <br />
+                    <span class="py-3 fw-300">Date - </span>13 March, 2020
+                    <br />
+                    <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                    <br />
+                    <span class="py-3 fw-300">Price - </span> $129.99
+                  </div>
+                </div>
+              </div>
+              <div class="card-internship-white">
+                <div class="text-center">
+                  Detail’s Internship Programme is tailored to students pursuing
+                  an LLB degree. The internship provides
+                  students exposure to transactional (non-courtroom) practice
+                  and mentorship. </div>
+                <div class="btn-get-more text-center pt-4">
+                  <button class="bg-gray bdr5 px-3 py-2">
+                    <a href="./detail.html">
+                      <div class="flex-center">
+                        <div class="content-btn pr-2">
+
+                          See more
+                        </div>
+                        <div class="icon-arrow-small">
+                          <img src="./images/icons/arrow-right.png" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our achievement -->
+    <section>
+      <div class="heading-blue text-32 text-blue text-center fwb">
+        Our achievement
+      </div>
+      <div class="pd-all py-3">
+        <div class="flex-center justify-content-center">
+          <div class="col-4 text-center">
+            <div class="img-number mx-auto">
+              <img src="./images/more-than.png" alt="">
+            </div>
+            <div class="py-2">
+              students
+            </div>
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="img-number mx-auto">
+              <img src="./images/plus-de.png" alt="">
+            </div>
+            <div class="py-2">
+              hours of courses </div>
+          </div>
+
+
+          <div class="col-4 text-center">
+            <div class="img-number mx-auto">
+              <img src="./images/m-grandute.png" alt="">
+            </div>
+            <div class="py-2">
+              graduation success </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our-center -->
+    <section>
+
+      <div class="our-center py-5">
+        <div class="img-our-center">
+          <img src="./images/our-center.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- your town -->
+    <section>
+
+      <div class="bg-yourtown text-white text-center">
+        <div class="flex-column-form d-md-flex d-block">
+          <div class="content-town py-4">
+            <div class="heading-blue text-32 fwb">
+              You want a center to open in your town? </div>
+          </div>
+          <div class="text-20">
+            Enter the name of your city and your email address to be notified as
+            soon as it opens
+          </div>
+          <div class="input-form py-4 w-100">
+            <div class="d-md-flex d-block justify-content-center">
+              <div class="input-inside col-md-2 col-12">
+                <input type="text"
+                  class="bg-none w-100 flex-box-email-scantf text-white outline-0"
+                  placeholder="ville" />
+              </div>
+              <div class="input-inside col-md-4 col-12 py-md-0 py-2">
+                <input type="email" required
+                  class="bg-none w-100 flex-box-email-scantf text-white outline-0"
+                  placeholder="yourmail@gmail.com" />
+              </div>
+              <div class="button-subcribe col-md-1 col-12">
+                <button type="submit" class="bg-white  w-100 text-dark flex-box-email-scantf">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </article>
+
+  <footer class="footer">
+    <div class="pd-all py-2">
+      <div class="d-md-flex d-block flex-wrap justify-content-between">
+        <div
+          class="col-lg-9 col-12 d-md-flex d-inline flex-wrap justify-content-between">
+          <div class="col-lg-6 col-12">
+            <div class="d-flex justify-content-center">
+              <div class="icon-small pr-2">
+                <img src="./images/icons/phone.png" alt="">
+              </div>
+              <div class="num-phone">
+                0901.9898.99 - 0901.9898.11
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="d-flex justify-content-center">
+              <div class="icon-small pr-2">
+                <img src="./images/icons/mail.png" alt="">
+              </div>
+              <div class="num-phone">
+                abc@gmail.com </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 flex-center text-right">
+          <div class="flex-center w-100 justify-content-between">
+            <div class="text-blue">
+              Follow us
+            </div>
+            <div class="social">
+              <div class="flex-center justify-content-center">
+                <div class="icon-social mr-2">
+                  <img src="./images/icons/fb.png" alt="">
+                </div>
+                <div class="icon-social">
+                  <img src="./images/icons/instagram.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+</html>

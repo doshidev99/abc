@@ -1,0 +1,27 @@
+.wrapper {
+  width: 980px;
+  height: 610px;
+  margin: 0 auto;
+  background-color: rgb(177, 177, 171);
+  font-family: Tahoma, sans-serif;
+  padding: 10px;
+}
+
+#left {
+  float: left;
+  text-align: right;
+  width: 400px;
+  font-weight: bold;
+}
+
+#right {
+  float: right;
+  text-align: left;
+  width: 520px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 130px;
+}
+

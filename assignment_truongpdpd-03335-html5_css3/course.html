@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESS - About</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="bg-white">
+    <nav class="flex-center justify-content-between">
+      <div class="col-4 pd-l-all">
+        <a class="navbar-brand cursor-pointer" href="/">
+          <div class="img-logo">
+            <img src="./images/top-logo.png" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- mobile menu -->
+      <button onclick="dropDown()"
+        class="outline-0 navbar-toggler d-lg-none pr-3" type="button">
+        <div class="img-logo navbar-toggler-icon">
+          <img src="./images/icons/icon-mobile.png" alt="">
+        </div>
+      </button>
+
+      <div id="menuMobile"
+        class="collapse d-none h-100vh transition navbar-collapse col-8 navbar-url-mobile"
+        id="navbarTogglerDemo01">
+        <div
+          class="flex-center  navbar-nav w-100 justify-content-between d-lg-flex d-inline">
+          <div class="w-navbar text-center py-2"
+            style="border-bottom: 2px solid;">
+            <a class="nav-href" href="./index.html">Home</a>
+            <div class="active-url"></div>
+          </div>
+          <div class="w-navbar text-center py-2">
+            <a class="nav-href" href="./about.html">About Us</a>
+            <div class="active-url"></div>
+          </div>
+          <div class=" box-btn-mobile mx-auto my-2">
+            <a class="nav-href" href="/home">
+              <div class="box-button">
+                Registration
+              </div>
+            </a>
+          </div>
+
+          <div class="box-btn-mobile mx-auto my-2">
+            <a class="nav-href" href="./login.html">
+              <div class="box-button">
+                Login
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- end mobile menu -->
+      <!-- desktop menu -->
+      <div class="pd-r-all d-lg-block d-none col-lg-4 col-8 navbar-url">
+        <div
+          class="flex-center  w-100 justify-content-between d-lg-flex d-inline">
+          <div class="w-navbar-dk" style=" border-bottom: 2px solid;">
+            <a class="nav-href" href="./index.html">Home</a>
+            <div class="active-url"></div>
+          </div>
+          <div class="w-navbar-dk">
+            <a class="nav-href" href="./about.html">About Us</a>
+            <div class="active-url"></div>
+          </div>
+          <div class=" box-btn-dk">
+            <a class="nav-href" href="./course.html">
+              <div class="box-button">
+                Course
+              </div>
+            </a>
+          </div>
+
+          <div class="box-btn-dk">
+            <a class="nav-href" href="./login.html">
+              <div class="box-button">
+                Login
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- end dekstop menu -->
+    </nav>
+
+  </header>
+
+  <!-- end navbar -->
+
+  <article class="body container-fluid">
+    <div class="section pt-5">
+      <h3 class="text-blue">Classes</h3>
+      <section class="pd-all py-5">
+        <div class="wrapper-internships">
+          <div class="d-md-flex d-inline flex-wrap">
+            <!-- cards -->
+            <div class="pt-3 col-lg-4 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-title">
+                  <div class="img-bgr position-relative">
+                    <img src="./images/bg-intern.png" alt="">
+
+                    <div class="text-white border-card">
+                      <div class="text-20 fwb">
+                        Internship Programme
+                      </div>
+                      <br />
+                      <span class="py-3 fw-300">Date - </span>13 March, 2020
+                      <br />
+                      <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                      <br />
+                      <span class="py-3 fw-300">Price - </span> $129.99
+                    </div>
+                  </div>
+                </div>
+                <div class="card-internship-white">
+                  <div class="text-center">
+                    Detail’s Internship Programme is tailored to students
+                    pursuing an LLB degree. The internship provides
+                    students exposure to transactional (non-courtroom) practice
+                    and mentorship. </div>
+
+                  <div class="btn-get-more text-center pt-4">
+                    <button class="bg-gray bdr5 px-3 py-2">
+                      <a href="./detail.html">
+                        <div class="flex-center">
+                          <div class="content-btn pr-2">
+
+                            See more
+                          </div>
+                          <div class="icon-arrow-small">
+                            <img src="./images/icons/arrow-right.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- comunication -->
+            <div class="pt-3 col-lg-4 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-title">
+                  <div class="img-bgr position-relative">
+                    <img src="./images/bg-communication.png" alt="">
+
+                    <div class="text-white border-card">
+                      <div class="text-20 fwb">
+                        Communication Intern </div>
+                      <br />
+                      <span class="py-3 fw-300">Date - </span>13 March, 2020
+                      <br />
+                      <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                      <br />
+                      <span class="py-3 fw-300">Price - </span> $129.99
+                    </div>
+                  </div>
+                </div>
+                <div class="card-internship-white">
+                  <div class="text-center">
+                    Detail’s Internship Programme is tailored to students
+                    pursuing an LLB degree. The internship provides
+                    students exposure to transactional (non-courtroom) practice
+                    and mentorship. </div>
+                  <div class="btn-get-more text-center pt-4">
+                    <button class="bg-gray bdr5 px-3 py-2">
+                      <a href="./detail.html">
+                        <div class="flex-center">
+                          <div class="content-btn pr-2">
+
+                            See more
+                          </div>
+                          <div class="icon-arrow-small">
+                            <img src="./images/icons/arrow-right.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- draw -->
+            <div class="pt-3 col-lg-4 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-title">
+                  <div class="img-bgr position-relative">
+                    <img src="./images/bg-draw.png" alt="">
+
+                    <div class="text-white border-card">
+                      <div class="text-20 fwb">
+                        Drawing Intern
+                      </div>
+                      <br />
+                      <span class="py-3 fw-300">Date - </span>13 March, 2020
+                      <br />
+                      <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                      <br />
+                      <span class="py-3 fw-300">Price - </span> $129.99
+                    </div>
+                  </div>
+                </div>
+                <div class="card-internship-white">
+                  <div class="text-center">
+                    Detail’s Internship Programme is tailored to students
+                    pursuing an LLB degree. The internship provides
+                    students exposure to transactional (non-courtroom) practice
+                    and mentorship. </div>
+                  <div class="btn-get-more text-center pt-4">
+                    <button class="bg-gray bdr5 px-3 py-2">
+                      <a href="./detail.html">
+                        <div class="flex-center">
+                          <div class="content-btn pr-2">
+
+                            See more
+                          </div>
+                          <div class="icon-arrow-small">
+                            <img src="./images/icons/arrow-right.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 col-lg-4 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-title">
+                  <div class="img-bgr position-relative">
+                    <img src="./images/bg-draw.png" alt="">
+
+                    <div class="text-white border-card">
+                      <div class="text-20 fwb">
+                        Drawing Intern
+                      </div>
+                      <br />
+                      <span class="py-3 fw-300">Date - </span>13 March, 2020
+                      <br />
+                      <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                      <br />
+                      <span class="py-3 fw-300">Price - </span> $129.99
+                    </div>
+                  </div>
+                </div>
+                <div class="card-internship-white">
+                  <div class="text-center">
+                    Detail’s Internship Programme is tailored to students
+                    pursuing an LLB degree. The internship provides
+                    students exposure to transactional (non-courtroom) practice
+                    and mentorship. </div>
+                  <div class="btn-get-more text-center pt-4">
+                    <button class="bg-gray bdr5 px-3 py-2">
+                      <a href="./detail.html">
+                        <div class="flex-center">
+                          <div class="content-btn pr-2">
+
+                            See more
+                          </div>
+                          <div class="icon-arrow-small">
+                            <img src="./images/icons/arrow-right.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="pt-3 col-lg-4 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-title">
+                  <div class="img-bgr position-relative">
+                    <img src="./images/bg-draw.png" alt="">
+
+                    <div class="text-white border-card">
+                      <div class="text-20 fwb">
+                        Drawing Intern
+                      </div>
+                      <br />
+                      <span class="py-3 fw-300">Date - </span>13 March, 2020
+                      <br />
+                      <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                      <br />
+                      <span class="py-3 fw-300">Price - </span> $129.99
+                    </div>
+                  </div>
+                </div>
+                <div class="card-internship-white">
+                  <div class="text-center">
+                    Detail’s Internship Programme is tailored to students
+                    pursuing an LLB degree. The internship provides
+                    students exposure to transactional (non-courtroom) practice
+                    and mentorship. </div>
+                  <div class="btn-get-more text-center pt-4">
+                    <button class="bg-gray bdr5 px-3 py-2">
+                      <a href="./detail.html">
+                        <div class="flex-center">
+                          <div class="content-btn pr-2">
+
+                            See more
+                          </div>
+                          <div class="icon-arrow-small">
+                            <img src="./images/icons/arrow-right.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 col-lg-4 col-md-6 col-12">
+              <div class="card-detail">
+                <div class="card-title">
+                  <div class="img-bgr position-relative">
+                    <img src="./images/bg-draw.png" alt="">
+
+                    <div class="text-white border-card">
+                      <div class="text-20 fwb">
+                        Drawing Intern
+                      </div>
+                      <br />
+                      <span class="py-3 fw-300">Date - </span>13 March, 2020
+                      <br />
+                      <span class="py-3 fw-300"> Time - </span> 09:30 a.m
+                      <br />
+                      <span class="py-3 fw-300">Price - </span> $129.99
+                    </div>
+                  </div>
+                </div>
+                <div class="card-internship-white">
+                  <div class="text-center">
+                    Detail’s Internship Programme is tailored to students
+                    pursuing an LLB degree. The internship provides
+                    students exposure to transactional (non-courtroom) practice
+                    and mentorship. </div>
+                  <div class="btn-get-more text-center pt-4">
+                    <button class="bg-gray bdr5 px-3 py-2">
+                      <a href="./detail.html">
+                        <div class="flex-center">
+                          <div class="content-btn pr-2">
+
+                            See more
+                          </div>
+                          <div class="icon-arrow-small">
+                            <img src="./images/icons/arrow-right.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </article>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./main.js"></script>
+
+
+</html>

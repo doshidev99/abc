@@ -1,0 +1,247 @@
+/* 1. flex box */
+/* 2. button */
+/* 3. background */
+/* 4.color */
+/* 5.border-radius border */
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  width: 20%;
+}
+.col-9 {
+  width: 80%;
+}
+/* 1. flex box */
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.just-between {
+  justify-content: space-between;
+}
+.p5 {
+  padding: 5px;
+}
+
+/* 2. button */
+.button-input::placeholder {
+  color: #2d9cdb;
+}
+.button-input:focus {
+  box-shadow: none;
+  outline: none;
+  background: none;
+}
+.button-input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #2d9cdb;
+  background: none;
+}
+.shadow-pd-button {
+  box-shadow: 0px 0px 20px rgba(117, 255, 230, 0.2);
+  border-radius: 25px;
+  padding: 10px 60px;
+}
+.btn-button {
+  background-color: #3f4260;
+}
+
+/* 3. background */
+
+.bgr-blue {
+  background-color: #2d9cdb !important;
+}
+
+.bgr-dash {
+  background: #352e3e;
+}
+
+.bgr-white {
+  background: #fff;
+}
+
+.bgr-special {
+  background: #3f4260;
+}
+
+/* // 4. color */
+
+.cl-blue {
+  color: #75ffe6;
+}
+
+.cl-light-blue {
+  color: #2d9cdb;
+}
+
+/* 5.border-radius border */
+
+.bdr-10 {
+  border-radius: 10px;
+}
+.bdr-20 {
+  border-radius: 20px;
+}
+
+.box-card {
+  box-shadow: 5px 4px 20px rgba(31, 99, 169, 0.75);
+}
+
+/* components */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list-table li {
+  list-style-type: none;
+}
+.list-table li:nth-child(even) {
+  background: #39364c;
+}
+.list-table li:nth-child(odd) {
+  background: #3f4260;
+}
+.list-sidebar li {
+  list-style-type: none;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.list-sidebar li:nth-child(n + 2):hover {
+  background: #2d9cdb;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.lh27 {
+  line-height: 27px;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.px-0 {
+  padding: 0 !important;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.py-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.mh-100 {
+  min-height: 100vh;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.potision-absolute {
+  position: absolute;
+}
+
+.taga {
+  color: white;
+  text-decoration: none;
+}
+.tagtitle {
+  color: rgb(70, 166, 221);
+  text-decoration: none;
+  font-weight: bold;
+}
+.taga:visited {
+  color: white;
+}
+.text-right {
+  text-align: right;
+}
+
+/* the books */
+
+.col-4 {
+  overflow: hidden;
+  width: 23%;
+}
+.border-book {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.border-book:hover {
+  color: violet;
+  background: #39364c;
+}
+.scale-book {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.scale-book:hover {
+  transform: scale(1.2);
+}
+.px-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cusor-pointer {
+  cursor: pointer;
+}
+
+.p-70 {
+  padding: 70px 0 !important;
+}
